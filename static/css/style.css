@@ -7,7 +7,6 @@ body {
     padding: 0;
 }
 
-/* Navbar styles */
 .navbar {
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
@@ -16,50 +15,28 @@ body {
     color: white !important;
 }
 
-/* Jumbotron hero section */
 .jumbotron {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+    background: rgba(255, 255, 255, 0.8);
     color: black;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     min-height: 400px;
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.jumbotron::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    z-index: -2;
-}
-
+/* Ensure all images have the same fixed size */
 .jumbotron img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-/* Content container with a frosted glass effect */
-.content-container {
-    background: rgba(186, 186, 186, 0.8);
-    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Ensures images don't get too large */
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images scale without stretching */
     border-radius: 10px;
-    backdrop-filter: blur(10px);
-    color: black;
+    margin-top: 20px;
 }
