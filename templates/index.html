@@ -1,9 +1,11 @@
 {% extends "base.html" %}
-{% block title %}Home - Science Club{% endblock %}
+
+{% block title %}Welcome to the Science Club{% endblock %}
+
 {% block content %}
 <div class="jumbotron">
-    <img src="{{ url_for('static', filename='images/science_bg.jpg') }}" alt="Science Club">
-    <h1>Welcome to the Science Club Website</h1>
-    <p>Explore Physics, Chemistry, and Biology.</p>
+    <h1>Welcome to the Science Club</h1>
+    <p>Explore the wonders of Physics, Chemistry, and Biology!</p>
+    <img src="{{ url_for('static', filename='images/science_bg.jpg') }}" alt="Science">
 </div>
 {% endblock %}
