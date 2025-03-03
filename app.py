@@ -1,7 +1,10 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+#instantiate the flask application
+app = Flask(__name__, static_folder="static")
 
+
+#set up routes for all pages
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -18,5 +21,7 @@ def chemistry():
 def biology():
     return render_template("biology.html")
 
-if __name__ == "__main__":
+
+#starts app with debug set to True
+if __name__ == "__main__": 
     app.run(debug=True)
